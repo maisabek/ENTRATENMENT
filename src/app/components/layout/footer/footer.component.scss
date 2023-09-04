@@ -17,7 +17,7 @@
         outline: none;
         // border-radius: 20px;
         padding: 10px;
-        margin: 0px -15%;    
+        margin: 0px -15%;
     }
 }
 .footer{
@@ -72,7 +72,7 @@
         color: white;
         line-height: 20px;
         text-align: center;
-        box-shadow: 5px 5px 10px rgb(0 0 0 / 50%); 
+        box-shadow: 5px 5px 10px rgb(0 0 0 / 50%);
 }
 @media (max-width: 767px ){/* mobile & tablet*/
 .footer ul {
@@ -92,7 +92,7 @@
     .footer1{padding:43px 0px}
 .footer1 h5, .footer1 p {
     margin: 9px 0%;
-   
+
 }
 .footer1 input {
     width:60% !important
@@ -101,10 +101,15 @@
     width:40% !important
 }
 }
-@media (min-width: 768px) and (max-width:991px){ /* small screen */ 
+@media (min-width: 768px) and (max-width:991px){ /* small screen */
     .footer ul {
         margin: 0 36%;
         width: 48%;
     }
 }
 
+
+svg
+path{
+  fill: white;
+}

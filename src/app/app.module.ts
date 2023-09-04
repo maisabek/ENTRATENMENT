@@ -13,18 +13,17 @@ import { FormsModule } from '@angular/forms';
 // import { DrawingModule } from './components/drawing/drawing.module';
 import { MoviesModule } from './components/movie/movies.module';
 import { NewsModule } from './components/news-data/news.module';
-// import { NgxChartsModule } from '@swimlane/ngx-charts';
 import {MatDialogModule} from '@angular/material/dialog'
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatInputModule} from '@angular/material/input'
 import {TranslateModule,TranslateLoader} from '@ngx-translate/core'
 import {TranslateHttpLoader} from '@ngx-translate/http-loader'
 import {MatMenuModule} from '@angular/material/menu';
-import { AllgamesComponent } from './components/games/allgames/allgames.component';
-import { GamesdetailsComponent } from './components/games/gamesdetails/gamesdetails.component'
 import { GamesModule } from './components/games/games.module';
 import { OwlModule } from 'ngx-owl-carousel';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // import { MaterialModule } from './shared/material/material.module';
 // import { NgWizardModule, NgWizardConfig, THEME } from 'ng-wizard';
@@ -73,7 +72,9 @@ return new TranslateHttpLoader(http,'./assets/i18n/','.json')
         useFactory:HttpLoaderFactory,
         deps:[HttpClient]
       }
-    })
+    }),
+    CommonModule,
+    FontAwesomeModule
 
   ],
   providers: [],
